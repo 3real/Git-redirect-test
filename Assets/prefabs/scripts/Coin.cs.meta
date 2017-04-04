@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: cfd12ec7d14e39640a9adc9e8bd090fc
+timeCreated: 1489776579
+licenseType: Free
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - sfxCoin: {fileID: 8300000, guid: a207eea890f14b140a47b9b5fa940f99, type: 3}
+  - coinScore: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
