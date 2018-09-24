@@ -53,13 +53,24 @@ public class player : MonoBehaviour {
         
     }
 
-    private void OnCollisionEnter(Collision collision)
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    if(collision.gameObject.tag == "obstacle")
+    //    {
+//            rigidBody.AddForce(new Vector2(-100, -20), ForceMode.Impulse);
+     //       rigidBody.detectCollisions = false;
+     //       audioSource.PlayOneShot (sfxDeath);
+      //      gamemanager.instance.PlayerCollided();
+      //  }
+    //}
+    IEnumerator OnCollisionEnter(Collision collision)
     {
         if(collision.gameObject.tag == "obstacle")
         {
             rigidBody.AddForce(new Vector2(-100, -20), ForceMode.Impulse);
             rigidBody.detectCollisions = false;
             audioSource.PlayOneShot (sfxDeath);
+            yield return new WaitForSeconds(1);
             gamemanager.instance.PlayerCollided();
         }
     }
